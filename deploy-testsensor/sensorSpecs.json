@@ -37,4 +37,5 @@
 	"type": "string",
 	"sigma": 0.5,
 	"startValue": "A"
+    }
 ]
