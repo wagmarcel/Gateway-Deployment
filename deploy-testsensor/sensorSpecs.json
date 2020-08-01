@@ -7,7 +7,7 @@
 	    }],
 	"name": "tempSensor",
 	"componentName": "temp",
-	"componentType": "temperature.v1.0",
+	"componentType": "Temperature.v1.0",
 	"type": "number",
 	"sigma": 0.1,
 	"startValue": 20
@@ -20,7 +20,7 @@
 	    }],
 	"name": "humSensor",
 	"componentName": "humidity",
-	"componentType": "humidity.v1.0",
+	"componentType": "Humidity.v1.0",
 	"type": "number",
 	"sigma": 0.5,
 	"startValue": 50
@@ -33,7 +33,7 @@
 	    }],
 	"name": "machineSensor",
 	"componentName": "machinedata",
-	"componentType": "machinedata.v1.1",
+	"componentType": "Machinedata.v1.1",
 	"type": "string",
 	"sigma": 0.5,
 	"startValue": "A"
