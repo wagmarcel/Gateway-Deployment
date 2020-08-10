@@ -19,6 +19,7 @@ spec:
       containers:
       - name: busybox
         image: docker.io/busybox:latest
+        imagePullPolicy: Always
         command: ["sleep"]
         args: ["100000000"]
       - name: oisp-iot-agent
@@ -36,8 +37,10 @@ spec:
           - name: oisp-devices-data-volume
             mountPath: /volume/data
         image: docker.io/oisp/oisp-iot-agent:v2.1.3
+        imagePullPolicy: Always
       - name: fusiongatewayapp
         image: docker.io/ibn40/fusiongatewayapp:v0.3
+        imagePullPolicy: Always
         env:
           - name: server.port
             value: "8081"
@@ -48,6 +51,7 @@ spec:
             mountPath: /app/resources
       - name: fusionmqttdataservice
         image: docker.io/ibn40/fusiongatewayapp:mqttv0.3 
+        imagePullPolicy: Always
         volumeMounts:
           - name: mqttservice-config
             mountPath: /app/resources
