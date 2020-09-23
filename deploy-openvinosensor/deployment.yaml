@@ -35,7 +35,7 @@ spec:
         imagePullPolicy: Always
       - name: oisp-testsensor
         image: docker.io/spandey21/openvino_model_client:v0.1
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         securityContext:
            privileged: true
         env:
