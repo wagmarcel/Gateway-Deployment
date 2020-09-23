@@ -38,7 +38,6 @@ spec:
         imagePullPolicy: IfNotPresent
         securityContext:
            privileged: true
-        hostNetwork: true
         env:
           - name: LOG_LEVEL
             value: "verbose"
@@ -68,6 +67,7 @@ spec:
         - name: dev-video0
           hostPath:
             path: /dev/video0
+      hostNetwork: true
       nodeSelector:
         kubernetes.io/hostname: <NODENAME>
       imagePullSecrets:
