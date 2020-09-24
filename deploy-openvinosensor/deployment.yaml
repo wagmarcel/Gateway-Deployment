@@ -32,10 +32,10 @@ spec:
           - name: oisp-devices-data-volume
             mountPath: /volume/data
         image: docker.io/oisp/oisp-iot-agent:v2.1.3
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
       - name: oisp-testsensor
         image: docker.io/spandey21/openvino_model_client:v0.1
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         securityContext:
            privileged: true
         env:
