@@ -10,6 +10,7 @@
 	"componentType": "Temperature.v1.0",
 	"type": "number",
 	"sigma": 0.1,
+        "sleep": 10,
 	"startValue": 20
     },
     {
