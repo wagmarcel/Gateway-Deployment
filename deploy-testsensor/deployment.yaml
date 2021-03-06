@@ -34,7 +34,7 @@ spec:
         image: docker.io/oisp/oisp-iot-agent:v2.1.3
         imagePullPolicy: Always
       - name: oisp-testsensor
-        image: docker.io/oisp/oisp-testsensor:v2.1.3
+        image: docker.io/wagmarcel/oisp-testsensor:incremental
         imagePullPolicy: IfNotPresent
         env:
           - name: LOG_LEVEL

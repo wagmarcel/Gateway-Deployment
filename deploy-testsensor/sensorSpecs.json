@@ -10,7 +10,8 @@
 	"componentType": "Temperature.v1.0",
 	"type": "number",
 	"sigma": 0.1,
-        "sleep": 1,
+        "modus": "incremental",
+        "sleep": 10,
 	"startValue": 20
     },
     {
@@ -24,7 +25,7 @@
 	"componentType": "Humidity.v1.0",
 	"type": "number",
 	"sigma": 0.5,
-        "sleep": 10,
+        "sleep": 1000,
 	"startValue": 50
     },
     {
